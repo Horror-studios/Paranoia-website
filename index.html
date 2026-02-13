@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows of the Abyss - Horror Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container">
+                <a class="navbar-brand" href="#">Shadows of the Abyss</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#characters">Characters</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#trailer">Trailer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <video autoplay muted loop class="hero-video">
+            <source src="horror-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <h1 class="hero-title">Enter the Abyss</h1>
+            <p class="hero-subtitle">Where shadows come alive.</p>
+            <a href="#about" class="btn btn-outline-light">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Story</h2>
+            <p>In the depths of an abandoned asylum, you uncover horrors that blur reality and nightmare...</p>
+        </div>
+    </section>
+
+    <section id="characters" class="characters-section">
+        <div class="container">
+            <h2>Characters</h2>
+            <div class="row">
+                <div class="col-md-4 character-card">
+                    <img src="character1.jpg" alt="Character 1">
+                    <h3>The Whisperer</h3>
+                    <p>A ghostly figure that haunts your every step.</p>
+                </div>
+                <!-- More cards -->
+            </div>
+        </div>
+    </section>
+
+    <section id="trailer" class="trailer-section">
+        <div class="container">
+            <h2>Watch the Trailer</h2>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/sample" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-dark">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Shadows of the Abyss. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
